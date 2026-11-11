@@ -1,0 +1,20 @@
+CONEXIÓN DIGITAL — SITIO WEB
+================================
+
+Archivos:
+- index.html: estructura de la revista.
+- styles.css: diseño adaptable a computadoras, tabletas y celulares.
+- script.js: navegación entre páginas, miniaturas y ampliación.
+- assets/: imágenes utilizadas en la revista.
+
+Cómo abrir:
+1. Extrae la carpeta conexion_digital_web.zip.
+2. Abre index.html con Chrome, Edge o Firefox.
+3. No requiere instalación, servidor ni conexión a internet para la navegación local.
+   (La fuente tipográfica externa puede requerir internet; hay fuentes alternativas.)
+
+Personalización:
+- Reemplaza las imágenes dentro de assets/ manteniendo sus nombres para actualizar las páginas.
+- El QR de la contraportada es ilustrativo y debe reemplazarse por uno real antes de publicar.
+- Los porcentajes de encuestas que aparezcan en ilustraciones deben sustituirse por resultados reales.
+- El proyecto usa JavaScript puro (Vanilla), sin frameworks.

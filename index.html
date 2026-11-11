@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conexión Digital: revista educativa de la Unidad Educativa Dr. José Falconí Villagómez.">
+  <title>Conexión Digital | Revista educativa</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Conexión Digital, inicio">
+      <span class="brand-mark">CD</span>
+      <span><strong>CONEXIÓN DIGITAL</strong><small>Revista educativa · Edición 01</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Navegación principal">
+      <a href="#revista">Leer revista</a>
+      <a href="#acerca">Acerca de</a>
+    </nav>
+    <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">UNIDAD EDUCATIVA DR. JOSÉ FALCONÍ VILLAGÓMEZ</p>
+        <h1>Tu identidad,<br><span>tu voz,</span><br>tu mundo digital.</h1>
+        <p class="hero-description">Una revista creada por estudiantes de Bachillerato Técnico para investigar, reflexionar y promover el uso responsable de las redes sociales.</p>
+        <a class="primary-button" href="#revista">Explorar la revista <span aria-hidden="true">→</span></a>
+        <p class="edition">SEGUNDO TRIMESTRE · AÑO LECTIVO 2026–2027</p>
+      </div>
+      <div class="hero-art">
+        <img src="assets/portada.png" alt="Portada ilustrada de Conexión Digital">
+      </div>
+    </section>
+
+    <section class="reader-section" id="revista">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EDICIÓN DIGITAL</p>
+          <h2>Lee nuestra revista</h2>
+          <p>Avanza página por página o selecciona una miniatura para abrirla.</p>
+        </div>
+        <span class="page-count" id="pageCount">Portada · 1 de 6</span>
+      </div>
+
+      <div class="reader">
+        <button class="arrow arrow-left" id="prevButton" aria-label="Página anterior">‹</button>
+        <button class="page-frame" id="openPage" aria-label="Ampliar página actual">
+          <img id="currentPage" src="assets/portada.png" alt="Portada de la revista">
+          <span class="zoom-hint">Toca para ampliar</span>
+        </button>
+        <button class="arrow arrow-right" id="nextButton" aria-label="Página siguiente">›</button>
+      </div>
+
+      <div class="reader-controls">
+        <button class="text-button" id="prevText">← Anterior</button>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <button class="text-button" id="nextText">Siguiente →</button>
+      </div>
+
+      <div class="thumbnails" id="thumbnails" aria-label="Seleccionar página">
+        <button class="thumbnail active" data-index="0"><img src="assets/portada.png" alt=""><span>Portada</span></button>
+        <button class="thumbnail" data-index="1"><img src="assets/pagina-2.png" alt=""><span>Presentación</span></button>
+        <button class="thumbnail" data-index="2"><img src="assets/pagina-3.png" alt=""><span>Identidad digital</span></button>
+        <button class="thumbnail" data-index="3"><img src="assets/pagina-4.png" alt=""><span>Seguridad y encuesta</span></button>
+        <button class="thumbnail" data-index="4"><img src="assets/pagina-5.png" alt=""><span>Historia y ciudadanía</span></button>
+        <button class="thumbnail" data-index="5"><img src="assets/contraportada.png" alt=""><span>Contraportada</span></button>
+      </div>
+    </section>
+
+    <section class="about-section" id="acerca">
+      <div class="about-card">
+        <p class="eyebrow">UN PROYECTO INTERDISCIPLINARIO</p>
+        <h2>Aprender, crear y comunicar en equipo.</h2>
+        <p>Conexión Digital reúne el trabajo colaborativo de primero, segundo y tercero de Bachillerato Técnico, con la participación de Lengua y Literatura, Matemática, Historia e Inglés.</p>
+        <div class="subject-tags">
+          <span>Lengua y Literatura</span><span>Matemática</span><span>Historia</span><span>Inglés</span><span>Área de Informática</span>
+        </div>
+      </div>
+      <div class="quote-card">
+        <span class="quote-mark">“</span>
+        <p>Conéctate, infórmate y actúa con responsabilidad.</p>
+        <small>CONEXIÓN DIGITAL · EDICIÓN 01</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>CONEXIÓN DIGITAL</strong><span>Unidad Educativa Dr. José Falconí Villagómez</span></div>
+    <p>Taura · Naranjal · Guayas · Ecuador</p>
+    <span class="footer-note">Tecnología, comunicación y sociedad.</span>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close-lightbox" id="closeLightbox" aria-label="Cerrar">×</button>
+    <button class="lightbox-arrow" id="lightPrev" aria-label="Página anterior">‹</button>
+    <img id="largePage" src="assets/portada.png" alt="Página ampliada de la revista">
+    <button class="lightbox-arrow" id="lightNext" aria-label="Página siguiente">›</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
